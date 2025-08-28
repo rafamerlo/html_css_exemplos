@@ -1,10 +1,76 @@
 /* === LAYOUT COM FLEXBOX === */
 
-* {
+/* === LAYOUT COM FLEXBOX === */
+
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Inclui padding e border no tamanho */
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Habilita o recurso (Flex-box) */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Estilos do Header (Cabeçalho) */
+.cabecalho-principal {
+    background: linear-gradient(90deg, #cd2ddf, #45044f);
+    color: white;
+    padding: 20px;
+}
+.menu-principal ul {
+    display: flex; /* Deixa os links na vertical lado a lado */
+    list-style: none; /* Retira a bolinha da lista*/
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* centraliza usando (Flex-*/
+}
 
-/* Continuar digitação (Aqui)  */
+.menu-principal a {
+    color: rgb(255, 249, 253);
+    text-decoration: none; /* Retira o traço */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.menu-principal a:hover {
+    background-color: rgb(255,255,255,0.2);
+    /* color: rgb(255,255,255,0.2); */
+}
+/* Estilos Main (Conteúdo principal) */
+.cabecalho-principal {
+    flex: 3; /* Ocupa 3/4 do espaço */
+    padding: 20px;
+    border-radius: 8px;
+    height:fit-content; /Altura ajustável do conteúdo/
+}
+/Estilos Articles/
+.seção-destaque,
+.artigo-blog,
+.secao-servicos {
+    background: #white
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #rgb(0,0,0,0.1)
+}
+.artigo-blog header {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom:15px;
+}
+time {
+    color: rgb(244, 46, 204);
+    font-style: italic;
+}
+/*Footer (Rodapé) */
+.rodape-principal {
+    background-color: rgb(205, 204, 204);
+    color: #db34bf;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+

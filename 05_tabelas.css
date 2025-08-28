@@ -18,4 +18,61 @@ h2 {
 
 /* === Estilo base para todas as tabelas === */
 
-/* Continuar digitação (Aqui) */
+table {
+    border-collapse: collapse; /* Remove espaço entre as bordas */
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+}
+
+.tabela-produtos {
+    border: 2px solid #3498db;
+}
+.tabela-produtos thead {
+    background-color: #3498db;
+    color: #fff;
+}
+.tabela-produtos th,
+.tabela-produtos td {
+    padding: 12px;
+    text-align: left;
+    border-bottom:  1px solid #ecf0f1;
+}
+/* Zebrado em linhas (pares) alternados */
+.tabela-produtos tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Zebrado em linhas (ímpares) alternadas */
+.tabela-produtos tbody tr:nth-child(odd) {
+    background-color: #999;
+}
+/* Hover linhas em tabela */
+.tabela-produtos tbody tr:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+/* ____________________________ */
+/* Estilos da tabela de vendas */
+.tabela-vendas {
+    border: 1px solid #27ae60;
+}
+
+.tabela-vendas th {
+    padding: 15px;
+    background-color: #27ae60;
+    color: #fff;
+    font-size: 18px;
+}
+.valor {
+    text-align: right; /* Texto alinhado a direita */
+    font-weight: bold; /* Negrito */
+    color: #2c3e50;
+}
+.total {
+    background-color: #f1c40f;
+    font-weight: bold; /* Negrito */
+}

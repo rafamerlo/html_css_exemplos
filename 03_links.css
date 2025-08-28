@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI';
+    line-height: 1.6;
+    margin: 20px;
+   background: linear-gradient(45deg, #d759db,#d993f1);
+   /* background: radial-gradient(circle at top left, pink, violet); */
+/* background: conic-gradient(rgb(187, 187, 245), rgb(248, 167, 248)); */
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase; /* Deixa tudo maiúscula */
+    letter-spacing: 20px; /* Espaça as letras */
+}
+
+/* LINKS - Estadose pseudo-classes */
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    transition: all 0,3s ease; /* Animação suave */
+}
+/* Estado do link não visitado */
+a:Link {
+    color: rgb(154, 25, 139);
+}
+/* Estado do link visitado */
+a:visited {
+    color: rgb(224, 8, 123);
+}
+
+/*  Quando o mouse estiver em cima ("Houver") */
+a:hover {
+    /* color: magenta; */
+    background-color: magenta;
+    border-radius: 5px;
+}
+
+/* Estilo da classe link-topo */
+.link-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: magenta;
+    color: #fff; !important;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.link-topo:hover {
+    background-color: deeppink;
+    border-radius: 50%;
+}
